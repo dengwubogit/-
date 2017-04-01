@@ -8,7 +8,7 @@ public class ToIndex {
 	
 	@RequestMapping("toIndex")
 	public String toIndex(){
-		
+		 
 		return "index";
 	}
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cc.wubo.dao.StudentDao" >
+  <resultMap id="BaseResultMap" type="cc.wubo.pojo.Student" >
+    <id column="NO" property="no" jdbcType="VARCHAR" />
+    <result column="Sname" property="sname" jdbcType="VARCHAR" />
+    <result column="Sage" property="sage" jdbcType="TIMESTAMP" />
+    <result column="Ssex" property="ssex" jdbcType="VARCHAR" />
+  </resultMap>
+  
+  </mapper>

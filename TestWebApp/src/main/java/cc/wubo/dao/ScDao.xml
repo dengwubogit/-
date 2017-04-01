@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cc.wubo.dao.ScDao" >
+  <resultMap id="BaseResultMap" type="cc.wubo.pojo.Sc" >
+    <result column="T_NO" property="tNo" jdbcType="VARCHAR" />
+    <result column="C_NO" property="cNo" jdbcType="VARCHAR" />
+    <result column="score" property="score" jdbcType="DECIMAL" />
+  </resultMap>
+  
+  </mapper>
