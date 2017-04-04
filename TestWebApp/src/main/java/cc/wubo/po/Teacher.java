@@ -1,4 +1,4 @@
-package cc.wubo.pojo;
+package cc.wubo.po;
 
 import java.io.Serializable;
 

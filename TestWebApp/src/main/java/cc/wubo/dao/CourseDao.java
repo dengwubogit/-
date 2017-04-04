@@ -1,5 +1,5 @@
 package cc.wubo.dao;
 
-public class CourseDao {
+public interface CourseDao {
 
 }

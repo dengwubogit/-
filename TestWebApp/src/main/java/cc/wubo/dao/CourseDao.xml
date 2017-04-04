@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="cc.wubo.dao.CourseDao" >
-  <resultMap id="BaseResultMap" type="cc.wubo.pojo.Course" >
+  <resultMap id="BaseResultMap" type="cc.wubo.po.Course" >
     <id column="NO" property="no" jdbcType="VARCHAR" />
     <result column="Cname" property="cname" jdbcType="VARCHAR" />
     <result column="T_NO" property="tNo" jdbcType="VARCHAR" />

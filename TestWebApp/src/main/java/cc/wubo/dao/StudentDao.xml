@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="cc.wubo.dao.StudentDao" >
-  <resultMap id="BaseResultMap" type="cc.wubo.pojo.Student" >
-    <id column="NO" property="no" jdbcType="VARCHAR" />
-    <result column="Sname" property="sname" jdbcType="VARCHAR" />
-    <result column="Sage" property="sage" jdbcType="TIMESTAMP" />
-    <result column="Ssex" property="ssex" jdbcType="VARCHAR" />
-  </resultMap>
-  
-  </mapper>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.wubo.dao.StudentDao">
+	<resultMap id="BaseResultMap" type="cc.wubo.po.Student">
+		<id column="NO" property="no" jdbcType="VARCHAR" />
+		<result column="Sname" property="sname" jdbcType="VARCHAR" />
+		<result column="Sage" property="sage" jdbcType="TIMESTAMP" />
+		<result column="Ssex" property="ssex" jdbcType="VARCHAR" />
+	</resultMap>
+
+	<select id="selectByScore" resultType="cc.wubo.po.Student">
+		SELECT
+		a.*
+		FROM
+		student a
+		INNER JOIN sc b
+		ON a.no=b.s_no AND b.c_no='01'
+		INNER JOIN sc c
+		ON a.no=c.s_no AND c.c_no='02'
+		WHERE b.score>c.score
+
+	</select>
+	<select id="findAll" resultType="cc.wubo.po.Student">
+		select * from student;
+	</select>
+</mapper>

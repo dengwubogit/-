@@ -1,5 +1,5 @@
 package cc.wubo.dao;
 
-public class ScDao {
+public interface ScDao {
 
 }
